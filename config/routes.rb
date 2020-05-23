@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   get :about,        to: 'static_pages#about'
   get :use_of_terms, to: 'static_pages#terms'
   get :signup,       to: 'users#new'
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :dishes
+  resources :relationships, only: [:create, :destroy]
 end
