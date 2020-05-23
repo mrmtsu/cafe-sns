@@ -58,7 +58,7 @@ RSpec.describe "StaticPages", type: :system do
       it "カフェログとは？の文字列が表示されることを確認" do
         expect(page).to have_content 'カフェログとは？'
       end
-  
+
       it "正しいタイトルが表示されることを確認" do
         expect(page).to have_title full_title('カフェログとは？')
       end

@@ -22,6 +22,7 @@ ja:
         updated_at: 更新日時
       dish:
         id: ID
+        picture: 料理の写真
         name: 料理名
         description: 説明
         portion: 分量
