@@ -42,7 +42,7 @@ RSpec.describe "お料理登録", type: :request do
                                             reference: "https://cookpad.com/recipe/2798655",
                                             required_time: 30,
                                             popularity: 5,
-                                            picture: picture } } 
+                                            picture: picture } }
       }.not_to change(Dish, :count)
       expect(response).to render_template('dishes/new')
     end
