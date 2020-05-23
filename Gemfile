@@ -72,3 +72,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'carrierwave',             '1.2.2'
+gem "mini_magick",             '>= 4.9.4'
+
+group :production do
+ gem 'fog', '1.42'
+end
